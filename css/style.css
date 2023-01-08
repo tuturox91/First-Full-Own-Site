@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url("../img/flowersPattern.png") repeat;
+	background-size: 300px;
+	text-indent: 30px;
+}
+
+
+.banner {
+	width: 100%;
+	background: url("../img/banner.jpg"); 
+	background-size: 100% 200%;
+	max-height: 400px;
+	position: relative;
+	border-bottom: 3px solid rgb(72, 121, 72);
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.mainLogo {
+	display: inline-block;
+	position: absolute;
+	width: 100px;
+	animation: rescaleLogo 1.5s infinite alternate;
+	margin-left: 30px;
+	margin-top: -35px;
+}
+
+.banner h1 {
+	font-size: 2em;
+	text-align: center;
+	color: white;
+	font-family: 'Rowdies', cursive;
+	text-shadow: 3px 3px 2px rgba(32, 32, 32, .5);
+}
+
+
+@keyframes rescaleLogo {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+
+nav {
+	width: 100%;
+	background: url("../img/naturePattern.jpg") rgba(192, 255, 180, 0.5);
+	background-size: 30%;
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: bold;
+	padding: 15px;
+	border-bottom: 3px dashed rgb(72, 121, 72);
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	text-align: center;
+	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+	background: linear-gradient(133deg, rgba(92,200,100,1) 0%, rgba(179,255,147,1) 60%, rgba(168,255,159,1) 100%);
+	margin-right: 5px;
+	color: black;
+	border: 2px solid rgb(76, 173, 72);
+	border-radius: 30px;
+	box-shadow: -3px 3px 5px rgba(24, 24, 24, .5);
+}
+
+nav a:hover {
+	box-shadow: -5px 5px 5px rgba(24, 24, 24, .5);
+}
+
+.main {
+	float: left;
+	width: 60%;
+	max-width: 800px;
+	min-width: 300px;
+	margin-left: 27%;
+	padding: 15px;
+	font-size: 1.3em;
+	background-color: rgb(255, 255, 255 );
+}
+
+.main h2 {
+	text-align: center;
+}
+
+.main p {
+	margin-bottom: 10px;
+}
+
+.news {
+	float: left;
+	max-width: 250px;
+	width: 20%;
+	min-width: 200px;
+	margin-right: 10px;
+	background-color: white;
+	margin-left: 5px;
+	margin-top: 5px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.news .new {
+	border: 2px dashed green;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.news h3 {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 25px;
+	margin-bottom: 5px;
+	border-bottom: 2px dashed green;
+}
+
+.news p {
+	text-indent: 0;
+	padding: 10px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.banner h1 {
+		font-size: 1em;
+	}
+
+	.banner img {
+		width: 40px;
+		margin-left: 15px;
+		margin-top: -10px;
+	}
+
+	.main {
+		float: none;
+		margin-left: 5%;
+		width: 90%;
+		margin-right: 10px;
+	}
+
+	.news {
+		float: none;
+		margin-left: 5%;
+		max-width: none;
+		width: 90%;
+		margin-bottom: 10px;
+	}
+
+	nav {
+		font-size: 0.7em;
+		background-size: 70%;
+	}
+
+	nav a { 
+		padding: 5px 5px;
+	}
+
+}
+
